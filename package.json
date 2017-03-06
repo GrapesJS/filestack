@@ -1,0 +1,36 @@
+{
+  "name": "grapesjs-plugin-filestack",
+  "version": "0.0.2",
+  "description": "Enable Filestack uploader inside the Asset Manager",
+  "main": "dist/grapesjs-plugin-filestack.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "WEBPACK_ENV=prod && npm run v:patch && webpack && npm run build:css",
+    "build:css": "node-sass src/style/main.scss dist/grapesjs-plugin-filestack.css",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "start": "WEBPACK_ENV=dev ./node_modules/.bin/webpack-dev-server --progress --colors & npm run build:css -- -w"
+  },
+  "keywords": [
+    "grapesjs",
+    "plugin",
+    "filestack",
+    "upload",
+    "asset manager"
+  ],
+  "author": "Artur Arseniev",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "eslint": "^3.2.2",
+    "json-loader": "^0.5.4",
+    "mocha": "^3.2.0",
+    "node-sass": "^3.13.0",
+    "webpack": "^1.13.1",
+    "grapesjs": "^0.4.25",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

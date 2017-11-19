@@ -11,6 +11,7 @@ $pfxam: $pfx + 'am-';
   overflow: hidden;
 }
 
+.#{$pfxam}preview-cont,
 .#{$pfxam}assets-cont ##{$pfxam}meta,
 .#{$pfxam}assets-cont ##{$pfxam}preview-cont {
   width: 100%;

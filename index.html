@@ -3,57 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>GrapesJS Newsletter Editor</title>
-    <link rel="stylesheet" href="./node_modules/grapesjs/dist/css/grapes.min.css">
-    <link rel="stylesheet" href="./dist/grapesjs-plugin-filestack.css">
-
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/grapesjs/dist/grapes.min.js"></script>
-    <!-- <script src="https://api.filestackapi.com/filestack.js"></script> -->
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <link href="dist/grapesjs-plugin-filestack.css" rel="stylesheet">
     <script src="https://static.filestackapi.com/v3/filestack-0.1.10.js"></script>
-    <script src="./dist/grapesjs-plugin-filestack.min.js"></script>
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="dist/grapesjs-plugin-filestack.min.js"></script>
     <style>
       body, html{ height: 100%; margin: 0;}
     </style>
   </head>
   <body>
-    <style>
-    /*reddish bg: rgba(70, 58, 60, 0.5) #463a3c color: #b9a5a6*/
-    /*
-    .fsp-modal {
-      background-color: rgba(0,0,0, 0.35);
-      color: #ddd;
-    }
-    .fsp-header {
-      border-color: rgba(0,0,0,0.35);
-    }
-    .fsp-modal__sidebar {
-        background-color: rgba(0,0,0,0.15);
-        box-shadow: 1px 0 0 0 rgba(0,0,0,0.25);
-    }
-    .fsp-source-list__item.active {
-      background-color: rgba(0,0,0,0.15);
-    }
-    .fsp-container {
-      background-color: transparent;
-    }
-    .fsp-modal__body,
-    .fsp-modal__sidebar:hover {
-      background-color: #444;
-    }
-    .fsp-content {
-      overflow-y: auto;
-    }
-    .fsp-drop-area {
-      background-color: transparent;
-    }
-    .fsp-drop-area:hover,
-    .fsp-drop-area:hover .fsp-drop-area__subtitle {
-      color: #444;
-    }
-    .fsp-text__title {
-      color: inherit;
-    }*/
-    </style>
 
     <div id="gjs" style="height:0px; overflow:hidden">
       <img style="margin: 18% 0 0 45%" src="http://artf.github.io/grapesjs/img/grapesjs-logo.png" />
@@ -80,10 +39,7 @@
 
         plugins: ['gjs-plugin-filestack'],
         pluginsOpts: {
-          'gjs-plugin-filestack': {
-            key: 'Ajh5qpZXWQqmcxokCAM0Zz',
-            //filestackOpts: {locale: 'en'}
-          }
+          'gjs-plugin-filestack': { key: 'Ajh5qpZXWQqmcxokCAM0Zz' }
         }
       });
     </script>

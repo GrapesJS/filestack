@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-plugin-filestack",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "Enable Filestack uploader inside the Asset Manager",
   "main": "dist/grapesjs-plugin-filestack.min.js",
   "scripts": {

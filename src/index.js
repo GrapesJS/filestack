@@ -1,4 +1,6 @@
-grapesjs.plugins.add('gjs-plugin-filestack', (editor, opts = {}) => {
+import grapesjs from 'grapesjs';
+
+export default grapesjs.plugins.add('gjs-plugin-filestack', (editor, opts = {}) => {
   let c = opts;
   let config = editor.getConfig();
   let pfx = config.stylePrefix || '';

@@ -22,7 +22,9 @@ Demo: http://grapesjs.com/demo.html
         *blobs* Array of Objects, eg. [{url:'...', filename: 'name.jpeg', ...}]
         *assets* Array of inserted assets
 
+## Prerequisites
 
+- [filestack-js](https://github.com/filestack/filestack-js) **up to v0.11.5 only** (not compatible with filestack-js v1 and above)
 
 ## Download
 
